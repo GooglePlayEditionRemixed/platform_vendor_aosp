@@ -76,7 +76,11 @@ endif
 
 # Substratum
 PRODUCT_COPY_FILES += \
-vendor/aosp/prebuilt/common/app/Substratum/Substratum.apk:system/app/Substratum/Substratum.apk
+    vendor/aosp/prebuilt/common/app/Substratum/Substratum.apk:system/app/Substratum/Substratum.apk
+
+# Launcher
+PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/app/Pixel/PixelLauncher.apk:system/app/Pixel/PixelLauncher.apk
    
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -115,9 +119,6 @@ PRODUCT_PACKAGES += \
     masquerade \
     Terminal
 
-# Required Packages
-PRODUCT_PACKAGES += \
-    SlimLauncher
 
 # Stagefright FFMPEG plugin
 PRODUCT_PACKAGES += \
