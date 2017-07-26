@@ -59,23 +59,6 @@ PRODUCT_COPY_FILES +=  \
     vendor/aosp/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
     vendor/aosp/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
-# SuperSU
-ifneq ($(NEEDS_SYSTEMMODE_SU),true)
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/SystemModeSuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/aosp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-endif
-ifneq ($(BOARD_VENDOR),sony)
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/etc/UPDATE-SuperSU-2.52.zip:system/addon.d/UPDATE-SuperSU.zip \
-    vendor/aosp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-endif
-ifneq ($(NEEDS_SUPERSU),true)
-PRODUCT_COPY_FILES += \
-   vendor/aosp/prebuilt/common/etc/UPDATE-SuperSU.zip:system/addon.d/UPDATE-SuperSU.zip \
-   vendor/aosp/prebuilt/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon
-endif
-
 # Substratum
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/app/Substratum/Substratum.apk:system/app/Substratum/Substratum.apk
