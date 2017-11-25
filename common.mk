@@ -64,8 +64,8 @@ PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/app/Substratum/Substratum.apk:system/app/Substratum/Substratum.apk
 
 # Launcher3..? or... PixelLauncher..?
-PRODUCT_COPY_FILES += \
-    vendor/aosp/prebuilt/common/app/Pixel/PixelLauncher.apk:system/app/Pixel/PixelLauncher.apk
+#PRODUCT_COPY_FILES += \
+#   vendor/aosp/prebuilt/common/app/Pixel/PixelLauncher.apk:system/app/Pixel/PixelLauncher.apk
    
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -102,7 +102,8 @@ PRODUCT_PACKAGES += \
     sqlite3 \
     strace \
     masquerade \
-    Terminal
+    Terminal \
+    Launcher3
 
 
 # Stagefright FFMPEG plugin
