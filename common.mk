@@ -62,10 +62,6 @@ PRODUCT_COPY_FILES +=  \
 # Substratum
 PRODUCT_COPY_FILES += \
     vendor/aosp/prebuilt/common/app/Substratum/Substratum.apk:system/app/Substratum/Substratum.apk
-
-# Launcher3..? or... PixelLauncher..?
-PRODUCT_COPY_FILES += \
-   vendor/aosp/prebuilt/common/app/launcher/launcher.apk:system/app/Launcher3/Launcher3.apk
    
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
