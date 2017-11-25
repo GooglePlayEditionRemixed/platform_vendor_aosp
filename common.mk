@@ -100,7 +100,8 @@ PRODUCT_PACKAGES += \
     masquerade \
     Terminal \
     SunBeam \
-    GBoard
+    GBoard \
+    Launcher3
 
 
 # Stagefright FFMPEG plugin
