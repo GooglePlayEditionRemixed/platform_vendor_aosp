@@ -102,7 +102,9 @@ PRODUCT_PACKAGES += \
     sqlite3 \
     strace \
     masquerade \
-    Terminal 
+    Terminal \
+    SunBeam \
+    GBoard
 
 
 # Stagefright FFMPEG plugin
